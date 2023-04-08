@@ -6,6 +6,10 @@ import * as Location from 'expo-location';
 
 // Importing Component
 import UserMenu from './components/userMenu';
+import DrawerMenu from './components/drawer'
+
+// Creating Context
+export const DrawerContext = React.createContext();
 
 export default function App() {
   const [location, setLocation] = useState(null);
@@ -32,13 +36,20 @@ export default function App() {
 
   return (
     <View>
-      <MapView style={styles.map} 
-        initialRegion={location}
-        showsUserLocation='true'
-        followsUserLocation='true'
-        />
-      <UserMenu />
-      <Icon name="menu" style={styles.MenuIcon}  />
+      <DrawerContext.Provider value={[toggleDrawer, setToggleDrawer]}>
+        {/* Renders Map and user location with the initial region over the user location
+            and allows the mapview to follow the use location */}
+        <MapView style={styles.map} 
+          initialRegion={location}
+          showsUserLocation='true'
+          followsUserLocation='true'
+          />
+        <UserMenu />
+        {/* Menu Icon When clicked Opens Side Drawer */}
+        <Icon name="menu" style={styles.MenuIcon} 
+          onPress={() => { setToggleDrawer(!toggleDrawer) }}/>
+        <DrawerMenu toggled={toggleDrawer}/>
+      </DrawerContext.Provider>
         
     </View>
   );
