@@ -5,6 +5,6 @@
  like to be friends with.
 
 
-<img src="https://user-images.githubusercontent.com/83037265/230747500-6cb4c481-840b-4859-a10a-09cbd0b98a1e.PNG" width="400" height="600">
-<img src="https://user-images.githubusercontent.com/83037265/230747502-e13fcf47-7389-4e6f-ba75-241532f35472.PNG" width="400" height="600">
-<img src="https://user-images.githubusercontent.com/83037265/230747503-d1b276d1-af47-4b3c-89b9-e041a28712bc.PNG" width="400" height="600">
+<img src="https://user-images.githubusercontent.com/83037265/230747500-6cb4c481-840b-4859-a10a-09cbd0b98a1e.PNG" width="300" height="600">
+<img src="https://user-images.githubusercontent.com/83037265/230747502-e13fcf47-7389-4e6f-ba75-241532f35472.PNG" width="300" height="600">
+<img src="https://user-images.githubusercontent.com/83037265/230747503-d1b276d1-af47-4b3c-89b9-e041a28712bc.PNG" width="300" height="600">
